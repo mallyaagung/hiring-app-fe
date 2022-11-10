@@ -25,7 +25,7 @@ To use this app use this link
 
 ## Screenshot
 
-<img src="public/image/readme1.png" width="100%">
-<img src="public/image/readme2.png" width="100%">
-<img src="public/image/readme3.png" width="100%">
+<img src="public/image/readme1.PNG" width="100%">
+<img src="public/image/readme2.PNG" width="100%">
+<img src="public/image/readme3.PNG" width="100%">
 <img src="public/image/readme4.png" width="100%">
