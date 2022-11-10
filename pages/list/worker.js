@@ -63,7 +63,7 @@ const ListWorker = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortQuery, setSortQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [workerPerPage] = useState(1);
+  const [workerPerPage] = useState(3);
 
   useEffect(() => {
     setSearchQuery("");
