@@ -6,17 +6,15 @@ import Home2 from "../components/Home/Home2";
 import Home3 from "../components/Home/Home3";
 import Carousel from "../components/Home/Carousel";
 import Home4 from "../components/Home/Home4";
+import { loadSkills, loadCarousel } from "./api";
 
-export async function getStaticProps(context) {
-  const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/skill/static`
-  );
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/user/worker`);
-
+export async function getStaticProps() {
+  const data = await loadSkills();
+  const worker = await loadCarousel();
   return {
     props: {
-      data: response.data.data,
-      worker: res.data.data,
+      data,
+      worker,
     },
     revalidate: 10,
   };
